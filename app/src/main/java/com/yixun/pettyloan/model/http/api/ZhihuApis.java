@@ -1,17 +1,8 @@
 package com.yixun.pettyloan.model.http.api;
 import com.yixun.pettyloan.model.bean.HotListBean;
 
-import java.util.Map;
-
 import io.reactivex.Flowable;
-import io.reactivex.Observable;
-import okhttp3.ResponseBody;
-import retrofit2.http.FieldMap;
 import retrofit2.http.GET;
-import retrofit2.http.POST;
-import retrofit2.http.PUT;
-import retrofit2.http.Query;
-import retrofit2.http.Url;
 
 /**
  * zhihu提供的开源api,供测试用

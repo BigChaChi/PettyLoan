@@ -32,20 +32,20 @@
         <activity
             android:name=".ui.GuidePictureActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme"/>
         <activity
             android:name=".ui.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.TranslucentStatusBar"></activity>
+            android:theme="@style/AppTheme.TranslucentStatusBar"/>
         <activity
             android:name=".ui.DetailActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.TranslucentStatusBar"></activity>
+            android:theme="@style/AppTheme.TranslucentStatusBar"/>
         <activity
             android:name=".ui.webview.WebViewActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.TranslucentStatusBar"></activity>
+            android:theme="@style/AppTheme.TranslucentStatusBar" />
 
     </application>
 

@@ -1,5 +1,6 @@
 package com.yixun.pettyloan.ui;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
@@ -7,10 +8,8 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.yixun.pettyloan.AppConfig;
 import com.yixun.pettyloan.R;
 import com.yixun.pettyloan.ui.base.BaseSupportActivity;
-import com.yixun.pettyloan.utils.PreferenceUtil;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -29,6 +28,7 @@ public class SplashActivity extends BaseSupportActivity {
     private int time = 5;
     private Message message;
 
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
