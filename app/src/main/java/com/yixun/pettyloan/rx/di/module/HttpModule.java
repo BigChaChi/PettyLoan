@@ -112,13 +112,13 @@ public class HttpModule {
         final SharedPrefsCookiePersistor persistor = new SharedPrefsCookiePersistor(context);
         ClearableCookieJar cookieJar = new PersistentCookieJar(new SetCookieCache(), persistor);
         builder.cookieJar(cookieJar);
-        List<Cookie> cookies = persistor.loadAll();
+        final List<Cookie> cookies = persistor.loadAll();
         Interceptor apikey = new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
                 Request request = chain.request();
                 request = request.newBuilder()
-                        .addHeader("Cookie", persistor.loadAll().toString())
+                        .addHeader("Cookie", cookies.toString())
 //                        .addHeader("apikey",Constants.KEY_API)
                         .build();
                 return chain.proceed(request);
